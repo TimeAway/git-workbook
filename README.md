@@ -1,7 +1,7 @@
 # git-workbook
 Git 指令练习仓库
 
-> 1. SSH 配置
+> 1.SSH 配置
 
 打开`git bash`
 
@@ -29,7 +29,7 @@ ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
-> 2. 创建仓库
+> 2.创建仓库
 
 - Clone Remote Repository With Https
 
