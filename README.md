@@ -1,2 +1,2 @@
 # git-workbook
-git 指令练习仓库
+Git 指令练习仓库
