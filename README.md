@@ -317,3 +317,150 @@ $ git push <remote> --tags
 $ git checkout -b <branch-name> <tag-name>
 ```
 
+### 查看信息
+#### 1. 显示有变更的文件
+```
+git status
+```
+
+#### 2. 显示当前分支的版本历史
+```
+git log
+```
+
+#### 3. 显示当前分支的版本历史，及修改的文件
+```
+git log --stat
+```
+
+#### 4. 根据关键词，搜索提交历史
+```
+git log -S <keyword>
+```
+
+#### 5. 显示某个commit之后的所有commit提交信息，每个message占据一行
+```
+$ git log <tag-name> HEAD --pretty=format:%s
+```
+
+#### 6. 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件
+```
+$ git log <tag-name> HEAD --grep feature
+```
+
+#### 7. 显示某个文件的版本历史，包括文件改名
+```
+$ git log --follow <file>
+$ git whatchanged <file>
+```
+
+#### 8. 显示指定文件相关的每一次diff
+```
+$ git log -p <file>
+```
+
+#### 9. 显示过去5次提交
+```
+$ git log -5 --pretty --oneline
+```
+
+#### 10. 显示所有提交过的用户，并按提交次数排序
+```
+$ git shortlog -sn
+```
+
+#### 11. 显示指定文件什么人在何时修改过
+```
+$ git blame <file>
+```
+
+#### 12. 显示暂存区与工作区的差异
+```
+$ git diff
+```
+
+#### 13. 显示暂存区与上一个commit的差异
+```
+$ git diff --cached <file>
+```
+
+#### 14. 显示工作区与当前分支最新commit之间的差异
+```
+$ git diff HEAD
+```
+
+#### 15. 显示两次提交之间的差异
+```
+$ git diff <first-commit> <second-commit>
+```
+
+#### 16. 显示今天写了多少代码
+```
+$ git diff --shortstat '@{0 day ago}'
+```
+
+#### 17. 显示某次提交的元数据和内容变化
+```
+$ git show <commit>
+```
+
+#### 18. 显示某次提交发生变化的文件
+```
+$ git show --name-only <commit>
+```
+
+#### 19. 显示某次提交，某个文件的内容
+```
+$ git show <commit>:<filename>
+```
+
+#### 20. 显示当前分支的最近几次提交
+```
+$ git reflog
+```
+### 标签
+#### 1. 列出所有标签
+```
+$ git tag
+```
+
+#### 2. 新建tag, 在当前commit
+```
+$ git tag <tag-name>
+```
+
+#### 3. 新建tag，在指定commit
+```
+$ git tag <tag-name> <commit>
+```
+
+#### 4. 删除本地tag
+```
+$ git tag -d <tag-name>
+```
+
+#### 5. 删除远程tag
+```
+$ git push origin :refs/tags/<tag-name>
+```
+
+#### 6. 查看tag信息
+```
+$ git show <tag-name>
+```
+
+#### 7. 提交指定tag
+```
+$ git push <remote> <tag-name>
+```
+
+#### 8. 提交所有tag
+```
+$ git push <remote> --tags
+```
+
+#### 9. 新建一个分支，指向某个tag
+```
+$ git checkout -b <branch-name> <tag-name>
+```
+
