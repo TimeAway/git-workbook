@@ -192,3 +192,81 @@ $ git commit --amend -m <message>
 ```
 $ git commit --amend <file1> <file2>
 ```
+
+### 版本分支
+#### 1. 列出所有的本地分支
+`-r` 表示列出所有远程分支
+
+`-a` 表示列出所有本地分支与远程分支
+```
+$ git branch <-r> <-a>
+```
+
+#### 2. 新建本地分支，但依然停留在当前分支
+```
+$ git branch <branch-name>
+```
+
+#### 3. 新建本地分支，并切换到分支
+```
+$ git branch -b <branch-name>
+```
+
+#### 4. 新建本地分支，并指向指定的commit
+```
+$ git branch <branch-name> <commit>
+```
+
+#### 5. 新建本地分支，并与指定的远程分支建立追踪关系
+```
+$ git branch --track <branch-name> <remote-branch-name>
+```
+
+#### 6. 切换本地分支，并更新工作区
+```
+$ git checkout <branch-name>
+```
+
+#### 7. 切换到上一个分支
+```
+$ git checkout -
+```
+
+#### 8. 让本地分支与指定远程分支之间建立追踪关系
+```
+$ git branch --set-upstream <branch-name> <remote-branch-name>
+```
+
+#### 9. 合并指定分支到当前分支
+```
+$ git merge <branch-name>
+```
+
+#### 10. 选择一个commit，合并到当前分支（也可直接指定分支，默认为该分支的最后一次commit）
+```
+$ git cherry-pick <commit>
+
+$ git cherry-pick <branch-name>
+```
+
+#### 11. 解决cherry-pick冲突并继续
+```
+$ git cherry-pick --continue
+```
+
+#### 12. 取消当前的cherry-pick
+```
+$ git cherry-pick --abort
+```
+
+#### 13. 删除本地分支
+```
+$ git branch -d <branch-name>
+```
+
+#### 14. 删除远程分支
+```
+$ git push origin --delete <branch-name>
+
+$ git branch -dr <remote/branch>
+```
