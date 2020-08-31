@@ -82,3 +82,33 @@ $ git push -u origin master
 ```
 $ git remote add origin git@github.com:TimeAway/git-workbook.git
 ```
+
+### 工作区
+
+1. 查看本地工作区变化文件状态
+```
+$ git status
+```
+
+2. 对比文件前后变化
+```
+$ git diff
+```
+
+### 暂存区
+
+1. 添加指定文件到暂存区
+```
+$ git add <file1> <file2> ...
+```
+
+2. 添加指定目录到暂存区，包括子目录
+```
+$ git add <dir1> <dir2>
+```
+
+3. 添加当前目录的所有文件到暂存区（包括修改及未跟踪文件，但不包括删除）
+```
+$ git add .
+```
+
