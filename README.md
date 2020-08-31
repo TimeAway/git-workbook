@@ -418,3 +418,56 @@ $ git show <commit>:<filename>
 ```
 $ git reflog
 ```
+
+### 远程同步
+#### 1. 拉取远程仓库最新内容到本地，需手动合并
+```
+$ git fetch <remote>
+```
+
+#### 2. 拉取远程仓库最新内容到本地，并与本地分支合并
+```
+$ git pull <remote> <branch-name>
+```
+
+#### 3. 拉取远程仓库最新内容到本地，并与本地分支合并，但是不会生成merge commit
+```
+$ git pull <remote> <branch-name> --rebase
+```
+简写
+```
+$ git pull --rebase
+```
+#### 4. 显示所有的远程仓库
+```
+$ git remote -v
+```
+
+#### 5. 增加一个新的远程仓库，并命名
+```
+$ git remote add [shortname] [url]
+```
+
+#### 6. 上传本地分支到远程仓库
+```
+$ git push <remote> <branch-name>
+```
+
+#### 7. 强行推送当前分支到远程仓库，即使有冲突
+```
+$ git push <remote> --force
+```
+简写
+```
+$ git push
+```
+
+#### 8. 强行推送当前分支到远程仓库，即使有冲突
+```
+$ git push <remote> --force
+```
+
+#### 9. 推送所有分支到远程仓库
+```
+$ git push <remote> --all
+```
