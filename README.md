@@ -151,3 +151,29 @@ $ git restore <file>
 ```
 $ git restore --staged LICENSE
 ```
+
+#### 11. 将暂存区文件恢复到工作区，包括删除，不会更改文件
+```
+$ git restore --staged LICENSE
+```
+
+#### 12. 将指定文件恢复到本地仓库某commit版本
+```
+$ git checkout HEAD <file>
+```
+
+### 本地仓库
+#### 1. 提交暂存区到本地仓库
+```
+$ git commit -m <message>
+```
+
+#### 2. 提交暂存区指定文件到本地仓库
+```
+$ git commit <file1> <file2> -m <message>
+```
+
+#### 3. 提交自上次commit之后的变化，直接到仓库区
+```
+$ git commit -a
+```
