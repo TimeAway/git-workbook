@@ -478,3 +478,43 @@ $ git checkout <commit> <file>
 ```
 $ git reset <file>
 ```
+
+#### 5. 重置暂存区与工作区，与上一次的commit保持一致（所有修改的文件都会被重置，暂存区与工作区会被清空）
+```
+$ git reset --hard
+```
+
+#### 6. 将所有暂存区文件恢复到工作区中
+```
+$ git reset --soft
+```
+
+#### 7. 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
+```
+$ git reset <commit>
+```
+
+#### 8. 置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
+```
+$ git reset --hard <commit>
+```
+
+#### 9. 重置当前HEAD为指定commit，但保持暂存区和工作区不变
+```
+$ git reset --soft <commit>
+```
+
+#### 10. 新建一个commit，用来撤销指定commit，后者的所有变化都将被前者抵消，并且应用到当前分支
+```
+$ git revert <commit>
+```
+
+#### 11. 将本地修改保存起来，并且将当前代码切换到HEAD上
+```
+$ git stash
+```
+
+#### 12. 恢复上次保存的文件到工作区
+```
+$ git stash pop
+```
