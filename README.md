@@ -518,3 +518,9 @@ $ git stash
 ```
 $ git stash pop
 ```
+
+### 其他操作
+#### 1. 生成一个可供发布的压缩包
+```
+$ git archive
+```
