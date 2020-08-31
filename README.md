@@ -177,3 +177,18 @@ $ git commit <file1> <file2> -m <message>
 ```
 $ git commit -a
 ```
+
+#### 4. 提交时显示所有的diff信息
+```
+$ git commit -v
+```
+
+#### 5. 使用新的commit替代上一次提交，如果代码无变化则改写上一次commit的提交信息（可忽略）
+```
+$ git commit --amend -m <message>
+```
+
+#### 6. 重做上一次commit，包括指定文件的新变化
+```
+$ git commit --amend <file1> <file2>
+```
