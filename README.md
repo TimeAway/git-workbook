@@ -142,26 +142,6 @@ $ git rm --cached <file>
 $ git mv <file-original> <file-renamed>
 ```
 
-#### 9. 将工作区文件（非暂存区）撤销修改，包括删除
-```
-$ git restore <file>
-```
-
-#### 10. 将暂存区文件恢复到工作区，包括删除，不会更改文件
-```
-$ git restore --staged LICENSE
-```
-
-#### 11. 将暂存区文件恢复到工作区，包括删除，不会更改文件
-```
-$ git restore --staged LICENSE
-```
-
-#### 12. 将指定文件恢复到本地仓库某commit版本
-```
-$ git checkout HEAD <file>
-```
-
 ### 本地仓库
 #### 1. 提交暂存区到本地仓库
 ```
@@ -237,34 +217,39 @@ $ git checkout -
 $ git branch --set-upstream <branch-name> <remote-branch-name>
 ```
 
-#### 9. 合并指定分支到当前分支
+#### 9. 切换到远程分支并创建本地分支
+```
+$ git branch -b <branch-name> origin/<remote-branch-name>
+```
+
+#### 10. 合并指定分支到当前分支
 ```
 $ git merge <branch-name>
 ```
 
-#### 10. 选择一个commit，合并到当前分支（也可直接指定分支，默认为该分支的最后一次commit）
+#### 11. 选择一个commit，合并到当前分支（也可直接指定分支，默认为该分支的最后一次commit）
 ```
 $ git cherry-pick <commit>
 
 $ git cherry-pick <branch-name>
 ```
 
-#### 11. 解决cherry-pick冲突并继续
+#### 12. 解决cherry-pick冲突并继续
 ```
 $ git cherry-pick --continue
 ```
 
-#### 12. 取消当前的cherry-pick
+#### 13. 取消当前的cherry-pick
 ```
 $ git cherry-pick --abort
 ```
 
-#### 13. 删除本地分支
+#### 14. 删除本地分支
 ```
 $ git branch -d <branch-name>
 ```
 
-#### 14. 删除远程分支
+#### 15. 删除远程分支
 ```
 $ git push origin --delete <branch-name>
 
@@ -470,4 +455,26 @@ $ git push <remote> --force
 #### 9. 推送所有分支到远程仓库
 ```
 $ git push <remote> --all
+```
+
+### 撤销操作
+
+#### 1. 将工作区文件（非暂存区）撤销修改，包括删除
+```
+$ git restore <file>
+```
+
+#### 2. 将暂存区文件恢复到工作区，包括删除，不会更改文件
+```
+$ git restore --staged LICENSE
+```
+
+#### 3. 重置工作区/暂存区的某个文件，与某次commit保持一致
+```
+$ git checkout <commit> <file>
+```
+
+#### 4. 将暂存区文件恢复到工作区，包括删除，不会更改文件
+```
+$ git reset <file>
 ```
