@@ -450,7 +450,7 @@ $ git remote -v
 
 #### 5. 增加一个新的远程仓库，并命名
 ```
-$ git remote add [shortname] [url]
+$ git remote add <shortname> <url>
 ```
 
 #### 6. 上传本地分支到远程仓库
