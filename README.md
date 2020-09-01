@@ -168,9 +168,9 @@ $ git commit -m <message>
 $ git commit <file1> <file2> -m <message>
 ```
 
-#### 3. 提交自上次commit之后的变化，直接到仓库区
+#### 3. 将工作区的文件，直接提交到本地仓库（相当于 add + commit合并为一步）
 ```
-$ git commit -a
+$ git commit -am <message>
 ```
 
 #### 4. 提交时显示所有的diff信息
