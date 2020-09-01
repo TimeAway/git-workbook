@@ -6,7 +6,6 @@ Git 指令练习仓库
 - [Git配置](#Git配置)
 - [SSH配置](#SSH配置)
 - [创建仓库](#创建仓库)
-- [工作区](#工作区)
 - [暂存区](#暂存区)
 - [本地仓库](#本地仓库)
 - [版本分支](#版本分支)
@@ -98,18 +97,6 @@ $ git push -u origin master
 例子：
 ```
 $ git remote add origin git@github.com:TimeAway/git-workbook.git
-```
-
-### 工作区
-
-#### 1. 查看本地工作区变化文件状态
-```
-$ git status
-```
-
-#### 2. 对比文件前后变化
-```
-$ git diff
 ```
 
 ### 暂存区
