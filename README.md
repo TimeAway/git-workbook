@@ -259,12 +259,17 @@ $ git cherry-pick --continue
 $ git cherry-pick --abort
 ```
 
-#### 14. 删除本地分支
+#### 14. 删除本地分支（该分支需要已被合并）
 ```
 $ git branch -d <branch-name>
 ```
 
-#### 15. 删除远程分支
+#### 15. 强制删除本地分支
+```
+$ git branch -D <branch-name>
+```
+
+#### 16. 删除远程分支
 ```
 $ git push origin --delete <branch-name>
 
