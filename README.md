@@ -139,9 +139,9 @@ $ git rm -f <file>
 $ git rm --cached <file>
 ```
 
-#### 8. 停止追踪指定目录及其所以文件，但会留在工作区
+#### 8. 停止追踪指定目录及其所以文件，但会留在工作区，-f 表示强制删除
 ```
-$ git rm -r --cached <catalogue>
+$ git rm -r<-f> --cached <catalogue>
 ```
 
 #### 9. 改名文件，并且将这个改名放入暂存区
