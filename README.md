@@ -144,7 +144,7 @@ $ git rm --cached <file>
 $ git rm -r --cached <catalogue>
 ```
 
-#### 8. 改名文件，并且将这个改名放入暂存区
+#### 9. 改名文件，并且将这个改名放入暂存区
 ```
 $ git mv <file-original> <file-renamed>
 ```
