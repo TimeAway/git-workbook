@@ -139,6 +139,11 @@ $ git rm -f <file>
 $ git rm --cached <file>
 ```
 
+#### 8. 停止追踪指定目录及其所以文件，但会留在工作区
+```
+$ git rm -r --cached <catalogue>
+```
+
 #### 8. 改名文件，并且将这个改名放入暂存区
 ```
 $ git mv <file-original> <file-renamed>
